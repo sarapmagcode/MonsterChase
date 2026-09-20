@@ -25,6 +25,11 @@ public class CameraFollow : MonoBehaviour
     /// </remarks>
     private void LateUpdate()
     {
+        if (player == null)
+        {
+            return;
+        }
+
         tempPos = transform.position; // Current position of the camera
         tempPos.x = player.position.x; // Player's x-coordinate position
 

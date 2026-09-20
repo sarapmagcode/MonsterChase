@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
     private bool _isGrounded = true;
     private const string GroundTag = "Ground";
 
+    private string EnemyTag = "Enemy";
+
     private void Awake()
     {
         _myBody = GetComponent<Rigidbody2D>();
@@ -85,6 +87,19 @@ public class Player : MonoBehaviour
         {
             _isGrounded = true;
             Debug.Log("On ground");
+        }
+
+        if (collision.gameObject.CompareTag(EnemyTag))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag(EnemyTag)) // On trigger, no need to include 'gameObject' property
+        {
+            Destroy(gameObject);
         }
     }
 }
