@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 595252042559112019}
   m_Layer: 0
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -203,5 +203,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596423d52be821045b2fc3ad67b2476b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  moveForce: 10
-  jumpForce: 11
+  _moveForce: 10
+  _jumpForce: 11
