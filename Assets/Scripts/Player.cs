@@ -25,17 +25,15 @@ public class Player : MonoBehaviour
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        // TODO: Player movement
-
-    }
+    void Start() { }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMoveKeyboard();
         AnimatePlayer();
+
+        PlayerJump();
     }
 
     void PlayerMoveKeyboard()
@@ -59,6 +57,14 @@ public class Player : MonoBehaviour
         else
         {
             anim.SetBool(WALK_ANIMATION, false);
+        }
+    }
+
+    void PlayerJump()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            Debug.Log("Jump pressed");
         }
     }
 }
