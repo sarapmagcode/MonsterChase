@@ -8,6 +8,9 @@ public class CameraFollow : MonoBehaviour
 
     private Vector3 tempPos;
 
+    [SerializeField]
+    private float minX, maxX;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
@@ -24,6 +27,16 @@ public class CameraFollow : MonoBehaviour
     {
         tempPos = transform.position; // Current position of the camera
         tempPos.x = player.position.x; // Player's x-coordinate position
+
+        if (tempPos.x < minX)
+        {
+            tempPos.x = minX;
+        }
+
+        if (tempPos.x > maxX)
+        {
+            tempPos.x = maxX;
+        }
 
         transform.position = tempPos; // Update the camera's position (basically, follow the player)
     }
