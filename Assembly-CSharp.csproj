@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Monster.cs" />
+    <Compile Include="Assets\Scripts\Collector.cs" />
     <Compile Include="Assets\Scripts\MonsterSpawner.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
   </ItemGroup>

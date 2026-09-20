@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     private bool _isGrounded = true;
     private const string GroundTag = "Ground";
 
-    private string EnemyTag = "Enemy";
+    private const string EnemyTag = "Enemy";
 
     private void Awake()
     {
