@@ -1,5 +1,7 @@
 # MonsterChase
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 By Mark Jason T. Galang ([@markjasongalang](https://github.com/markjasongalang))
 
 ## Overview
