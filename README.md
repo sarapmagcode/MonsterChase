@@ -8,3 +8,10 @@ Hello, everyone! I made this game from following the youtube tutorial below to l
 
 https://www.youtube.com/watch?v=gB1F9G0JXOo
 
+## Screenshots
+
+### Home
+![Home](https://github.com/sarapmagcode/MonsterChase/blob/main/Screenshots/Home.png)
+
+### Actual Gameplay
+![Actual Gameplay](https://github.com/sarapmagcode/MonsterChase/blob/main/Screenshots/ActualGameplay.png)
